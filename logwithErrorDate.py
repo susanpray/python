@@ -1,11 +1,10 @@
-from filelinelen import filelen
 import os
+from filelinelen import filelen
 file1 = 'mylog.log'
 logopen = open(file1,"r")
 file2 = 'mylog.lognew'
 newopen = open(file2,"w")
 lines = logopen.readlines()
-date = '2016-03-18'
 print file1 , "'s lines is :" , filelen(file1)
 
 for line in lines:
@@ -15,10 +14,6 @@ for line in lines:
 
 newopen.close()
 logopen.close()
-
 os.remove(file1)
 os.rename(file2,file1)
 print file1 , "'s lines is :" , filelen(file1)
-
-
-

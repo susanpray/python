@@ -9,22 +9,26 @@ db = MySQLdb.connect("localhost","root","root","susan" )
 # 使用cursor()方法获取操作游标 
 cursor = db.cursor()
 
+name="susan11"
+l_name="wang11"
 
-for i in range(100):
-	name="susan" + str(i)
-	l_name="wang" + str(i)
-	age= int(20+i)
-	sex="F"
-	income=int(2000+i)
-	sql = "INSERT INTO EMPLOYEE(FIRST_NAME, \
-	   LAST_NAME, AGE, SEX, INCOME) \
-	   VALUES ('%s', '%s', '%d', '%c', '%d' )" % \
-	   (name, l_name, age, sex, income)
-	try:
-		cursor.execute(sql)
-		db.commit()
-	except:
-   
-   		db.rollback()
+# SQL 插入语句
+sql = "INSERT INTO EMPLOYEE(FIRST_NAME, \
+       LAST_NAME, AGE, SEX, INCOME) \
+       VALUES ('%s', '%s', '%d', '%c', '%d' )" % \
+       (name, l_name, 20, 'M', 2000)
 
+#sql = """INSERT INTO EMPLOYEE(FIRST_NAME,
+ #        LAST_NAME, AGE, SEX, INCOME)
+  #       VALUES ("%s", "%s", 20, 'M', 2000)""" % (name,l_name)
+try:
+   # 执行sql语句
+   cursor.execute(sql)
+   # 提交到数据库执行
+   db.commit()
+except:
+   # Rollback in case there is any error
+   db.rollback()
+
+# 关闭数据库连接
 db.close()

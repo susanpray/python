@@ -1,4 +1,3 @@
-
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
@@ -17,13 +16,13 @@ cursor.execute(sql)
 fb = cursor.fetchall()
 
 for row in fb:
-        name = row[0]
-        l_name = row[1]
-        age = row[2]
-        sex = row[3]
-        income = row[4]
+	name = row[0]
+	l_name = row[1]
+	age = row[2]
+	sex = row[3]
+	income = row[4]
 
-        print "name = %s, l_name = %s, age = %s, sex = %s, income = %s" \
-        % (name, l_name , age , sex , income)
-        
+	print "name = %s, l_name = %s, age = %s, sex = %s, income = %s" \
+	% (name, l_name , age , sex , income)
+
 db.close()
