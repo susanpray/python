@@ -24,7 +24,7 @@ def read_file(file,newfile):
 
         for memberEng in memberEnglist:
             l = list(memberEng)
-            l[0] = l[0].upper()
+            l[-1] = l[-1].upper()
             memberstr =''.join(l)
 #            print memberstr
             ListSub.append(memberstr)

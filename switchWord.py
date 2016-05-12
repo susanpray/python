@@ -1,14 +1,11 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-##把一个文件里面的英语单词首字母大写
+#把一个文件里面的英语单词首字母大写
+import os
 
-file = "testdata/22"
+file = "testdata/2"
 newfile = "testdata/newsusan.txt"
 
-if not file:
-    print "no %s" %(file)
-else:
-    pass
 
 def read_file(file,newfile):
     f_open=open(file,'r+')

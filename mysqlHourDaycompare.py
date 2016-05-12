@@ -16,10 +16,10 @@ db1 = MySQLdb.connect("192.168.25.57","root","polydata","polydata" )
 cursor1 = db1.cursor()
 cursor2 = db2.cursor()
 
-datehour = "2016-04-20 14:59:59"
-dateday = "2016-04-20 23:59:59"
-code57 = '0c470f3e8830353ba15364960a9fce7e'
-code80 = '2d161c662cc0f0f2b3f642704d1b20ed'
+datehour = "2016-04-28 14:59:59"
+dateday = "2016-04-28 23:59:59"
+code57 = 'b2282b15301dc9cff4b12dbe26d4dc35'
+code80 = '249aeb9c333754186ff556a5581555d5'
 soc_sys = "soc system"
 #table = 't_sta_evt_basic20160401'
 tablelist1 = ['t_sta_evt_basic20160401','t_sta_ssn_trend','t_sta_ssn_pkg','t_sta_ssn_oct','t_sta_ssn_domain']
