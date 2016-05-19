@@ -46,8 +46,6 @@ def add_dlpfile():
                 Select(driver.find_element_by_id("alertcategory")).select_by_visible_text(u"有害程序")
                 driver.find_element_by_css_selector("#alertcategory > option.ng-binding.ng-scope").click()
                 Select(driver.find_element_by_id("alertsubcategory")).select_by_visible_text(u"网页恶意代码")
-                #driver.find_element_by_css_selector("option[value=\"1102\"]").click()
-                #driver.find_element_by_xpath("//form[@id='dataForm']/div[2]/div[10]/button[2]").click()
                 driver.find_element_by_xpath(u"//div/button[contains(text(), '提交')]").click()
                 time.sleep(5)
 if __name__ == "__main__":

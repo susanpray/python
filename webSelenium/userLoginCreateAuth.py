@@ -123,7 +123,7 @@ def authUserMutilpe():
 
 ###########登录#############################################
 def loginMultipleSubsystem():
-        linklist1 = ('https://192.168.25.71/pangolin/login.html','https://192.168.24.92/hawk/login.do')
+        linklist1 = ('https://192.168.25.71/pangolin/login.html','https://192.168.24.91/hawk/login.do')
         for member in memberAll:
                for link in linklist1:
                        try:
@@ -135,7 +135,7 @@ def loginMultipleSubsystem():
                        except NoAlertPresentException:
                                 pass
                                 print "no alert is existed,%s login successfully to %s"%(member,link)
-                       time.sleep(100)
+                       time.sleep(150)
 
 def loginMultipleSoc():
 
@@ -174,7 +174,7 @@ def delUserMutiple():
 
 #createUserMutiple()
 #authUserMutilpe()
-#loginMultipleSubsystem()
-loginMultipleSoc()
+loginMultipleSubsystem()
+#loginMultipleSoc()
 driver.quit()
 #delUserMutiple()
