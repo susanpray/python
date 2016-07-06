@@ -1,0 +1,21 @@
+{
+  "took" : 11,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 24,
+    "successful" : 24,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : null,
+    "hits" : [ {
+      "_index" : "ac859b923a00_flow_20160706",
+      "_type" : "flow_mail",
+      "_id" : "AVW992pX9k_RZx57RHMp",
+      "_score" : null,
+      "_source":{"receiveoctet":14237,"sendpacket":19,"receivepacket":31,"sendoctet":1238},
+      "sort" : [ 1467770613 ]
+    } ]
+  }
+}

@@ -18,7 +18,7 @@ ip1=output.read()[:-1]
 
 def pcap_dump():
     try:
-        os.system('nohup tcpdump -i eth0 port {0} -w ./pcap/{1}.pcap &'.format(sys.argv[1],sys.argv[2]))
+        os.system('tcpdump -i eth0 port {0} -w ./pcap/{1}.pcap &'.format(sys.argv[1],sys.argv[2]))
 
     except IndexError,e:
         if len(sys.argv) < 3:
@@ -32,7 +32,7 @@ def pcap_dump():
             print "*"*78
         sys.exit(1)
     else:
-        print "capturing package for port {0} and pcap file will be kept in {1}.pcap".format(sys.argv[1],sys.argv[2])
+        print "capturing package for port {0} and pcap file will be kept in {1}".format(sys.argv[1],sys.argv[2])
 
 
 def formattime(t): #日期字段格式化
@@ -70,7 +70,7 @@ def pcap_analysis():
                         print 'SendPkt:',sendpkt
                         print 'SendLen:',sendlen
 
-                    elif dstip==ip1:
+                    if dstip==ip1:
                          recpkt=recpkt+1
                          revlen=revlen+p.data.len
                          print '========================================================='
@@ -81,6 +81,8 @@ def pcap_analysis():
                          print 'RecPkt:',recpkt
                          print 'Reclen:',revlen
 
+            print "I'm going to leave now......!"
+            break
         except Exception as e:
             #print 'exection: {0}'.format(e)
             pass
@@ -90,5 +92,6 @@ def pcap_analysis():
 if __name__ == "__main__":
     pcap_dump()
     pcap_analysis()
+
 
 
