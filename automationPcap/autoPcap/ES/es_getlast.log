@@ -1,21 +1,21 @@
 {
-  "took" : 11,
+  "took" : 7,
   "timed_out" : false,
   "_shards" : {
-    "total" : 24,
-    "successful" : 24,
+    "total" : 30,
+    "successful" : 30,
     "failed" : 0
   },
   "hits" : {
     "total" : 1,
     "max_score" : null,
     "hits" : [ {
-      "_index" : "ac859b923a00_flow_20160706",
-      "_type" : "flow_mail",
-      "_id" : "AVW992pX9k_RZx57RHMp",
+      "_index" : "ac859b923a00_flow_20160707",
+      "_type" : "flow_unknown",
+      "_id" : "AVXEgtz60bi_PsScDnAt",
       "_score" : null,
-      "_source":{"receiveoctet":14237,"sendpacket":19,"receivepacket":31,"sendoctet":1238},
-      "sort" : [ 1467770613 ]
+      "_source":{"sendpacket":54,"receiveoctet":3114,"receivepacket":39,"sendoctet":90678},
+      "sort" : [ 1467880262 ]
     } ]
   }
 }

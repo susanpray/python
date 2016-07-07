@@ -81,8 +81,7 @@ def pcap_analysis():
                          print 'RecPkt:',recpkt
                          print 'Reclen:',revlen
 
-            print "I'm going to leave now......!"
-            break
+
         except Exception as e:
             #print 'exection: {0}'.format(e)
             pass
