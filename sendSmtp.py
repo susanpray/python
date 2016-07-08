@@ -19,7 +19,7 @@ This is a test e-mail message.
 3333333333333333333333333
 """
 username = 'shaojuan.wang@polydata.com.cn'
-password = 'Juanjuan88'   
+password = 'xxxxx'   
 msgRoot = MIMEMultipart('related')    
 msgRoot['Subject'] = 'test message'    
     

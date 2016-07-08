@@ -8,7 +8,7 @@ host = "pop3.polydata.com.cn"
 # 用户名
 username = "shaojuan.wang@polydata.com.cn"
 # 密码
-password = "Juanjuan88"
+password = "xxxxxx"
 # 创建一个pop3对象，这个时候实际上已经连接上服务器了
 pp = poplib.POP3(host)
 # 设置调试模式，可以看到与服务器的交互信息
