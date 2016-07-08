@@ -1,8 +1,10 @@
 
 ==============192.168.24.106========================
 ####create pcap and analysis pcap to [capture_analysisToFile.log]
+python capture_analysis.py 25 smtp7777
 
-./analysisFile_get.sh 25 smtp8888
+
+./analysisFile_get.sh 25 smtp0001
 
 
 ####send smtp mail
@@ -23,7 +25,7 @@
 
 ####get the ES send and receive pkgs info to [cat /root/git/testing/automationPcap/autoPcap/ES/pkt_info.log]
 
-/root/git/testing/automationPcap/autoPcap/ES/flow_searchToFile.sh 37376 25
+/root/git/testing/automationPcap/autoPcap/ES/flow_searchToFile.sh 38872 25
 
 
 ####compare the original [pkginfo_total.log] with the ES [pkt_info.log]

@@ -1,11 +1,11 @@
-capturing package for port 25 and pcap file will be kept in smtp8888
+capturing package for port 25 and pcap file will be kept in smtp0001
 ==========================================================
-time =  Thu Jul  7 16:28:52 2016
+time =  Thu Jul  7 18:05:55 2016
 IP
 TCP
-192.168.24.106PORT:38872------->42.120.219.29,PORT:25
+192.168.24.106PORT:40909------->42.120.219.29,PORT:25
 SendPkt: 24
 SendLen: 43905
-192.168.24.106PORT:38872<-------42.120.219.29,PORT:25
-RecPkt: 27
-Reclen: 1412
+192.168.24.106PORT:40909<-------42.120.219.29,PORT:25
+RecPkt: 24
+Reclen: 1259
