@@ -1,6 +1,5 @@
 #!/bin/bash
-
-curl -XPOST 'http://192.168.24.81:9200/flow/_search?pretty=true' -d '{
+curl -XPOST "http://$3:9200/flow/_search?pretty=true" -d '{
 	"query": {
 		"bool": {
 			"must": [

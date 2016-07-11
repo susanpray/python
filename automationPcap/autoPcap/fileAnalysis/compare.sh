@@ -1,17 +1,21 @@
 #!/bin/bash
 path="/root/git/testing/automationPcap/autoPcap/fileAnalysis"
+networkIP=$2
 pcapfile=$1
-if [ -z $1 ]
+if [ $# -lt 2 ]
 then
-	echo "please compare.sh [pcapfile]"
+	echo "please compare.sh [pcapfile] [networkIP]"
 	exit
 else
 	cd $path
 fi
 ###############transfer pcap to traffic machine###############
-sshpass -p "polydata" scp $1 root@192.168.24.82:/root
-sshpass -p "polydata" ssh root@192.168.24.82
-./send_pcap.sh 10 smtp0001.pcap em2 1
+#sshpass -p "polydata" scp $pcapfile root@192.168.25.42:/root
+#sshpass -p "polydata" ssh root@192.168.25.42 ./send_pcap.sh 10 $pcapfile em2 1
+traffic()
+{
+expect ssh_exe_cmd.exp 192.168.25.42 root polydata "./send_pcap.sh $1 10 em2 1"
+}
 
 ###############analysis pcap and get the total pkgs and length###############
 total_get()
@@ -24,7 +28,7 @@ flow_search()
 {
 scport=`tail -5 /tmp/11.log| grep PORT|awk -F'<' '{print $2}'|awk -F':' '{print $2}'`
 dstport=`tail -5 /tmp/11.log| grep PORT|awk -F'<' '{print $1}'|awk -F':' '{print $2}'`
-sh flow_searchToFile.sh $scport $dstport
+sh flow_searchToFile.sh $scport $dstport $networkIP
 }
 
 ###############compare the pkgs and length between local and ES###############
@@ -40,6 +44,9 @@ fi
 
 }
 
+traffic
+
+sleep 60
 
 total_get
 
