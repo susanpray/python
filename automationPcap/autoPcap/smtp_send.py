@@ -20,7 +20,7 @@ This is a test e-mail message.
 3333333333333333333333333
 """
 username = 'shaojuan.wang@polydata.com.cn'
-password = 'xxxxxx'   
+password = 'a8'
 msgRoot = MIMEMultipart('related')    
 msgRoot['Subject'] = 'test message'    
     
@@ -34,9 +34,10 @@ msgRoot['Subject'] = 'test message'
 # msgImage.add_header('Content-ID', '<image1>')    
 # msgRoot.attach(msgImage)   
 
-att = MIMEText(open('//susan//girl.jpg', 'rb').read(), 'base64', 'utf-8')    
+#att = MIMEText(open('//susan//girl.jpg', 'rb').read(), 'base64', 'utf-8')
+att = MIMEText(open('//susan//5377274fc801ff7240400803b4bbf23a', 'rb').read(), 'base64', 'utf-8')
 att["Content-Type"] = 'application/octet-stream'    
-att["Content-Disposition"] = 'attachment; filename="girl.jpg"'    
+att["Content-Disposition"] = 'attachment; filename="5377274fc801ff7240400803b4bbf23a"'
 msgRoot.attach(att)    
 #try:
 
