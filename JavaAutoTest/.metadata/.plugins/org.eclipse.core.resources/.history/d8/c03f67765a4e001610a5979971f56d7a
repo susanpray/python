@@ -1,0 +1,12 @@
+package helloword;
+
+
+public class printArray {
+	public static void printArray(int[] array) {
+		for(double Element: array){
+			System.out.println(Element);
+		}
+	}
+
+}
+

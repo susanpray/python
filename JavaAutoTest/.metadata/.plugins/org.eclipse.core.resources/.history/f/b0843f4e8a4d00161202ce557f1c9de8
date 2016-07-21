@@ -1,0 +1,14 @@
+package helloword;
+public class Susan_C {
+	   String breed;
+	   int age;
+	   String color;
+	   void barking(){
+	   }
+	   
+	   void hungry(){
+	   }
+	   
+	   void sleeping(){
+	   }
+	}

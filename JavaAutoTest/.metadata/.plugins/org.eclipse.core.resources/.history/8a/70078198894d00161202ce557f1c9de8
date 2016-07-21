@@ -1,0 +1,18 @@
+package helloword;
+
+class FreshJuice {
+   enum FreshJuiceSize{ SMALL, MEDUIM, LARGE }
+   FreshJuiceSize size;
+}
+
+public class Susan_C {
+   public static void main(String []args){
+      FreshJuice juice = new FreshJuice();
+      juice.size = FreshJuice. FreshJuiceSize.MEDUIM ;
+   }
+}
+
+class OtherJuice {
+	Susan_C apple = new Susan_C();
+	
+}

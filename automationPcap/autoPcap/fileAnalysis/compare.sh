@@ -10,11 +10,11 @@ else
 	cd $path
 fi
 ###############transfer pcap to traffic machine###############
-#sshpass -p "polydata" scp $pcapfile root@192.168.25.42:/root
+sshpass -p "polydata" scp $pcapfile root@192.168.25.85:/root
 #sshpass -p "polydata" ssh root@192.168.25.42 ./send_pcap.sh 10 $pcapfile em2 1
 traffic()
 {
-expect ssh_exe_cmd.exp 192.168.25.42 root polydata "./send_pcap.sh $1 10 em2 1"
+expect ssh_exe_cmd.exp 192.168.25.85 root polydata "./send_pcap.sh $pcapfile 10 em2 1"
 }
 
 ###############analysis pcap and get the total pkgs and length###############

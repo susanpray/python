@@ -1,0 +1,19 @@
+package helloword;
+
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String args[]) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("please input a age:");
+		int age = scanner.nextInt();
+		System.out.println("please input a name:");
+		String name = scanner.nextLine();
+		
+		if (age >= 44){
+			System.out.println("name"+ name + "is" + age +"years old");
+		}
+	
+	}
+
+}

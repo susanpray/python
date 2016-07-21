@@ -9,6 +9,8 @@ def filesize(file):
     print output
 def filelen(file):
     chfile=open(file,"r")
-    return len(chfile.readlines())
-#filesize('/susan/textbig')
-#filelen('/susan/textbig')
+    #return len(chfile.readlines())
+    print len(chfile.readlines())
+
+filesize('/susan/textbig')
+filelen('/susan/textbig')

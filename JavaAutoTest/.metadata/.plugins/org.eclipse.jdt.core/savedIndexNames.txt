@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+C:\Users\swang\Desktop\automation\JavaAutoTest\.metadata\.plugins\org.eclipse.jdt.core
+2699198894.index
+1948639418.index
+3952852893.index
+3183030045.index
+4286602859.index
+3865730998.index
+3066501596.index
+3255440071.index
+2632534470.index
+2340574871.index
+518296551.index
+3390220658.index
+879610340.index
+2455560682.index
+3740113845.index
+4125434098.index
+2280865210.index
+1491580823.index
+662938016.index

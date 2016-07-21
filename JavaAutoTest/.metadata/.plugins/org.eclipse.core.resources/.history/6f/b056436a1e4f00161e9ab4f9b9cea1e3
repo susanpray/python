@@ -1,0 +1,10 @@
+package helloword;
+
+public class TestPassByValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
